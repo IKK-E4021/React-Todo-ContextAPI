@@ -2,9 +2,9 @@ import { useState, useContext } from "react";
 import { IncompleteTodoContext } from "./providers/IncompleteTodoProvider";
 import { CompleteTodoContext } from "./providers/CompleteTodoProvider";
 import "./styles.css";
-import { InputArea } from "./components/InputArea";
-import { IncompleteTodos } from "./components/IncompleteTodos";
-import { CompleteTodos } from "./components/CompleteTodos";
+import { InputArea } from "./components/organism/InputArea";
+import { IncompleteTodos } from "./components/organism/IncompleteTodos";
+import { CompleteTodos } from "./components/organism/CompleteTodos";
 
 export default function App() {
   const [todoText, setTodoText] = useState("");
@@ -39,7 +39,6 @@ export default function App() {
 
   return (
     <>
-      <h1>Todo List</h1>
       <InputArea
         onChange={onChangeTodoText}
         onClick={onClickAdd}

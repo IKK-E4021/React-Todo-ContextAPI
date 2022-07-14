@@ -1,0 +1,25 @@
+.container {
+  background-color: #c6ffe2;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  color: #666;
+}
+
+.listRow {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.list {
+  margin-right: 8px;
+}
